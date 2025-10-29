@@ -1,0 +1,105 @@
+# =========================
+# .NET Web API (.NET 6+)
+# =========================
+## Build Folders ##
+bin/
+obj/
+
+## User-specific files ##
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio ##
+.vs/
+*.vscode/
+
+## Build Results ##
+[Bb]uild/
+[Ll]ogs/
+TestResults/
+*.log
+*.tlog
+*.cache
+*.config
+*.pdb
+
+## Packages ##
+*.nupkg
+*.snupkg
+packages/
+!**/packages/build/
+*.nuspec
+*.psess
+*.vsp
+*.vspx
+
+## Backup & Generated Files ##
+*.bak
+*.backup
+*.tmp
+*.temp
+*.dbmdl
+
+## Publish Outputs ##
+publish/
+out/
+wwwroot/dist/
+wwwroot/build/
+
+## Entity Framework ##
+Migrations/
+
+## Sensitive Files ##
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+
+# =========================
+# Angular Frontend
+# =========================
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Angular build cache
+.angular/cache/
+
+# environment files
+/src/environments/environment.ts
+/src/environments/environment.prod.ts
+
+# misc
+.DS_Store
+Thumbs.db
+
+# =========================
+# OS / General
+# =========================
+# Windows
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
