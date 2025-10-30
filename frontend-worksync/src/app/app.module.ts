@@ -7,14 +7,22 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { EmployeeComponent } from './pages/employee/employee.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faGrip } from '@fortawesome/free-solid-svg-icons';
+import { faChartColumn, faFolderOpen, faRightFromBracket, faSitemap, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { DepartmentComponent } from './pages/department/department.component';
+import { ProjectComponent } from './pages/project/project.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     EmployeeComponent,
-    SidebarComponent
+    SidebarComponent,
+    DepartmentComponent,
+    ProjectComponent,
+    TopbarComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +34,6 @@ import { faGrip } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppModule {
   constructor(library: FaIconLibrary){
-    library.addIcons(faGrip);
+    library.addIcons(faChartColumn, faUsers, faSitemap, faFolderOpen, faRightFromBracket);
   }
  }

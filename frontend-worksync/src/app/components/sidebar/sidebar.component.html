@@ -1,10 +1,37 @@
-<nav class="h-screen w-60 bg-white border border-1 shadow-md text-black flex flex-col gap-4 p-4">
-    <h3 class="text-lg font-semibold mb-6 border-b-2 pb-5">WorkSync</h3>
+<nav class="h-screen w-60 bg-white border border-1 shadow-md text-black flex flex-col justify-between p-2">
 
-    <u class="flex flex-col gap-5 text-base no-underline">
-        <li class="list-none"><a routerLink="/dashboard">Dashboard</a></li>
-        <li class="list-none"><a routerLink="/dashboard">Employee</a></li>
-        <li class="list-none"><a routerLink="/dashboard">Department</a></li>
-        <li class="list-none"><a routerLink="/dashboard">Projects</a></li>
-    </u>
+    <div class="flex flex-col">
+        <h3 class="text-lg font-semibold mb-6 border-b pt-3 px-2 pb-8">WorkSync</h3>
+        <u class="text-sm no-underline align-center flex flex-col mt-2">
+            
+            <li class="list-none rounded-md hover:bg-sky-400 hover:text-white py-3 p-2 hover:bg-blue-300">
+
+                <a routerLink="/dashboard" class="flex gap-1 align-center"><fa-icon
+                        [icon]="['fas', 'chart-column']" class="w-5"></fa-icon>Dashboard</a>
+            </li>
+
+            <li class="list-none rounded-md hover:bg-sky-400 hover:text-white py-3 p-2">
+                <a routerLink="/" class="flex gap-1 align-center">
+                    <fa-icon [icon]="['fas', 'users']" class="w-5"></fa-icon>Employees</a>
+            </li>
+
+            <li class="list-none rounded-md hover:bg-sky-400 hover:text-white py-3 p-2">
+                <a routerLink="/" class="flex gap-1 align-center" >
+                    <fa-icon [icon]="['fas', 'sitemap']" class="w-5"></fa-icon>Departments</a>
+            </li>
+
+            <li class="list-none rounded-md hover:bg-sky-400 hover:text-white py-3 p-2">
+                <a routerLink="/" class="flex gap-1 align-center">
+                    <fa-icon [icon]="['fas', 'folder-open']" class="w-5"></fa-icon>Projects</a>
+            </li>
+        </u>
+    </div>
+
+    <div class="items-bottom end rounded-md hover:bg-red-500 hover:text-white py-3 p-2 ">
+        <u class="flex flex-col gap-6 text-sm no-underline align-center">
+            <li class="list-none"><a routerLink="/" class="flex gap-1">
+                <fa-icon [icon]="['fas', 'right-from-bracket']" class="w-5"></fa-icon>Logout</a></li>
+        </u>
+    </div>
+
 </nav>
